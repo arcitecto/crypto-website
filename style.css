@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;;
+}
+
+body {
+    background-image: url(images/bckgrnd.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.top-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.top-navigation-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-navigation-links-right {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-right: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    float: right;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: lightcoral;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: aliceblue;
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a span:hover {
+    text-decoration: underline;
+    background-color: lightsalmon;
+}
+
+.main-page {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 5px;
+    align-items: center;
+}
+
+.cards img {
+    width: 210px;
+    height: 210px;
+    border: 2px solid goldenrod;
+}
+
+.caption {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+p:hover {
+    background-color: goldenrod;
+}
+
+.footer {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer:hover {
+    background-color: goldenrod;
+}
+
+.copyright {
+    display: flex;
+    color: purple;
+    margin-left: auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+    color: purple;
+    background-color: bisque;
+    padding: 2px;
+}
